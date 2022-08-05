@@ -1,38 +1,96 @@
+body {
+  background-color: rgb(40,40,30);
+  color: rgb(250, 250, 250);
+}
+
 .App {
+  margin: 50px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 30px;
+  
+}
+
+.game-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  border: 1px solid rgba(200,200,200, 0.1);
+  padding: 30px;
+}
+
+.game-stats-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+}
+
+button.sign-button {
+  background-color: rgb(40,40,40);
   color: white;
+  border: 1px solid rgba(200,200,200, 0.1);border: 1px solid rgba;
+  width: 70px;
+  height: 50px;
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+button.sign-button:hover {
+  border: 1px solid rgba(200,200,200, 0.5);border: 1px solid rgba;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.sign-button:active {
+  background-color: rgba(240,240,240, 0.1);border: 1px solid rgba;
+  color:rgb(230,230,230);
 }
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 250px;
+}
+
+.game-number {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.sign-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+}
+
+.difficulty {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-end-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
